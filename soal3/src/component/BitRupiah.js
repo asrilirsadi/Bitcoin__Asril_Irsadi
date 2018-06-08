@@ -13,7 +13,7 @@ class BitRupiah extends Component
     
   onSeriesInputChange = e =>{
                                 this.setState({ seriesName:e.target.value});
-                                axios.get(`https://blockchain.info/tobtc?currency=USD&value=${e.target.value}`)
+                                axios.get(`https://blockchain.info/tobtc?currency=USD&value=${e.target.value*14000}`)
                                 .then((ambilData) => {  
                                 console.log(ambilData);
                                 this.setState({
@@ -25,8 +25,8 @@ class BitRupiah extends Component
     
     render() 
     {
-
-        var bagian = this.state.hasil / {seriesName}
+        // const{masuk} = this.state;
+        // var bagian = this.state.hasil / {seriesName}
 
         const{seriesName} = this.state;
 
@@ -41,9 +41,9 @@ class BitRupiah extends Component
                             <br/>
                             <input value = {seriesName} type="number" onInput={this.onSeriesInputChange} style={{width:'400px'}}/>
                             <br/>
-                            { this.state.seriesName ? <h4>Rp {seriesName} &nbsp; BTC {bagian}</h4> :
-                            
-                            <div>
+                            {/* { this.state.seriesName ? <h4>Rp {seriesName} &nbsp; BTC {bagian}</h4> : */}
+                            { this.state.seriesName ? <h4>BTC {seriesName} &nbsp; Rp {this.state.hasil} </h4> :
+                           <div>
                                 <br/>
                                 <h4>Silakan input nominal Bitcoin</h4>
                             </div>
