@@ -9,8 +9,10 @@ class NavBar extends Component {
     	<div>
       	<center>
        	{/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2KFhvzigwmtyAUafx69Msh7ZLLNfFnIPKBoFqIZzE_N1NM7lB" style={{width:"541px", height:"100px", paddingTop:"20px"}}/> */}
-       	<img src="https://cdn-images-1.medium.com/max/1600/1*pbtcVbrrPc5Z5-B1V3X_wg.gif" style={{width:"400px", height:"200px", paddingTop:"20px"}}/>
-
+       	<img src="https://en.bitcoin.it/w/images/en/e/ed/Bitcoin_accepted_here_printable.png" style={{width:"500px", height:"200px", paddingTop:"20px"}}/>
+       	{/* <img src="https://cdn-images-1.medium.com/max/1600/1*pbtcVbrrPc5Z5-B1V3X_wg.gif" style={{width:"400px", height:"200px", paddingTop:"20px"}}/> */}
+        
+           
       	<div className="tabmenu" style={{width:"300px", marginTop:"20px", border:"10px solid black"}}>
 
       	{/* <ul className="nav nav-tabs" id="myTab" role="tablist">
